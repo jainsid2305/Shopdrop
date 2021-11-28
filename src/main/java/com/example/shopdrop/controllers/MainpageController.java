@@ -21,9 +21,9 @@ public class MainpageController {
 
     @RequestMapping(value = { "/", "/welcome" }, method = RequestMethod.GET)
     public String welcomePage(Model model) {
-        User user = userRepository.findByUserId(1);
+        //User user = userRepository.findByUserId(1);
         model.addAttribute("title", "Welcome");
-        model.addAttribute("user", user);
+        //model.addAttribute("user", user);
         model.addAttribute("message", "This is welcome page!");
         return "welcomePage";
     }
